@@ -1,0 +1,27 @@
+/* .bot-collection, .bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bot-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bot-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.bot-card button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+} */
