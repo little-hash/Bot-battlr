@@ -8,7 +8,7 @@ function App() {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
-    fetch("http://bots-si0g.onrender.com/bots")
+    fetch('https://cors-anywhere.herokuapp.com/http://bots-si0g.onrender.com/bots')
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []);
@@ -24,7 +24,7 @@ function App() {
   };
 
   const deleteBot = (bot) => {
-    fetch(`http://bots-si0g.onrender.com/bots/${bot.id}`, { method: "DELETE" })
+    fetch(`https://cors-anywhere.herokuapp.com/http://bots-si0g.onrender.com/bots/${bot.id}`, { method: "DELETE" })
       .then(() => {
         setBots(bots.filter((b) => b.id !== bot.id));
         setArmy(army.filter((b) => b.id !== bot.id));
